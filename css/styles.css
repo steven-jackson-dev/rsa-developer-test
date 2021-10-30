@@ -1,0 +1,114 @@
+:root {
+  --main-color-blue: #2589d8;
+}
+
+body {
+  background-color: #f6f6f6;
+  font-size: 1em;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  max-width: 60vw;
+  margin: 2em auto;
+  border: 1px solid #d1cfcf;
+  padding: 1em 2em;
+  background-color: white;
+  box-shadow: 18px 20px 9px 0px #d1cfcf;
+  transition: all linear 0.2s;
+}
+main:hover {
+  margin: 3em auto;
+  box-shadow: 1px 1px 9px 0px #d1cfcf;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Poker Form */
+.poker-form-wrapper h2 {
+  margin-top: 0;
+  text-align: center;
+}
+.poker-form-wrapper .error {
+  color: #e21b1b;
+}
+.poker-form-wrapper .best-poker-hand {
+  text-align: center;
+  font-size: 1.3em;
+  color: #e21b1b;
+}
+
+.poker-form-wrapper .best-poker-hand span {
+  text-align: center;
+  font-size: 1.3em;
+  color: var(--main-color-blue);
+}
+
+.poker-form-wrapper input {
+  padding: 0.6em 0;
+  margin-bottom: 1em;
+}
+
+.poker-form-wrapper input[type="submit"] {
+  color: white;
+  background-color: #34bd39;
+  border: none;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-buttons a {
+  text-align: center;
+  text-align: center;
+  background-color: #e17621;
+  color: white;
+  padding: 0.4em 0;
+}
+
+/* Poker Test Buttons */
+.poker-test-buttons-wrapper {
+  margin: 2em 0;
+}
+
+.poker-test-buttons-wrapper a {
+  background-color: var(--main-color-blue);
+  color: white;
+  padding: 0.6em 1em;
+  text-align: center;
+  box-shadow: 1px 1px 4px 0px #928383;
+}
+
+.poker-test-buttons-wrapper a:hover {
+  transition: all linear 0.2s;
+  background-color: #072253;
+}
+
+.poker-test-buttons-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+}
+
+@media screen and (max-width: 700px) {
+  .poker-test-buttons-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
